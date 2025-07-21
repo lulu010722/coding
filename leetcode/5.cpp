@@ -3,6 +3,7 @@
 class Solution
 {
 public:
+    // 用unordered_map<pair<int, int>, bool>不如直接二维vector快（前面的过不了。。）
     string longestPalindrome(string s)
     {
         int n = s.size();
