@@ -3,6 +3,12 @@
 #include <algorithm>
 #include <utility>
 #include <string>
+#include <map>
+#include <set>
+#include <stack>
+#include <queue>
+#include <deque>
 #include <unordered_map>
+#include <unordered_set>
 
 using namespace std;
