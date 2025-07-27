@@ -24,8 +24,10 @@ public:
                 }
                 if (diff < 0)
                     left++;
-                else
+                else if (diff > 0)
                     right--;
+                else
+                    return 0;
             }
         }
         return result;
