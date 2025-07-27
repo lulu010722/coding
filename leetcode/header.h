@@ -21,4 +21,21 @@ struct ListNode
     ListNode() : val(0), next(nullptr) {}
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
+    void print()
+    {
+        auto it = this;
+        while (it)
+            cout << it->val << ' ', it = it->next;
+        cout << endl;
+    }
 };
+
+ListNode *makeList(vector<int> array)
+{
+    ListNode *it = new ListNode;
+    auto head = it;
+    for (auto i : array)
+        it->next = new ListNode(i), it = it->next;
+    return head->next;
+}
+
