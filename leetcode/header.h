@@ -40,3 +40,29 @@ ListNode *makeList(vector<int> array)
     return head->next;
 }
 
+ostream &operator<<(ostream &os, const pair<int, int> &p)
+{
+    os << "(" << p.first << ", " << p.second << ")";
+
+    return os;
+}
+
+template <class T>
+ostream &operator<<(ostream &os, const vector<T> &vec)
+{
+    os << "[";
+    for (auto i : vec)
+        os << i << ", ";
+    os << (vec.empty() ? "]" : "\b\b]");
+
+    return os;
+}
+
+template <class T>
+ostream &operator<<(ostream &os, const vector<vector<T>> &vecs)
+{
+    for (auto &vec : vecs)
+        cout << vec << endl;
+
+    return os;
+}
