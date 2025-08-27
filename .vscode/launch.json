@@ -13,7 +13,7 @@
       "externalConsole": false,
       "MIMode": "gdb",
       "miDebuggerPath": "gdb.exe",
-      "preLaunchTask": "build cpp",
+      "preLaunchTask": "编译力扣算法",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",

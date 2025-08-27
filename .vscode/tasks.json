@@ -2,7 +2,17 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build cpp",
+      "label": "创建cpp模板",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "Copy-Item ${workspaceFolder}\\templates\\cpp ${fileDirname}\\${fileBasenameNoExtension}.cpp"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "编译力扣算法",
       "type": "shell",
       "command": "g++",
       "args": ["-g", "main.cpp", "-o", "main.exe"],
