@@ -15,6 +15,7 @@
 #include <unordered_set>
 #include <bitset>
 #include <cstring>
+#include <array>
 
 using namespace std;
 
